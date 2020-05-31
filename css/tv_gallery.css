@@ -1,0 +1,113 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+header {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../image/tv_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+.box {
+    position:absolute;  
+}
+
+video {
+    width:     100%;
+    margin: auto;
+    min-height: 100%;
+}
+
+.pc {
+  width: 40%;
+  max-width: 80vh;
+  margin-right: 5%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.box > img {
+    position: relative;
+    z-index: 1;
+}
+
+.pc-video {
+    position: absolute;
+    left:22%;
+    top:10%;
+    width: 50%;
+    z-index: 0;
+}
+
+.tv {
+  width: 60%;
+  max-width: 70vh;
+  margin-right: 10%;
+  right: 40%;
+  top: 55%;
+  transform: translateY(-30%);
+}
+
+.tv-gif {
+  position: absolute;
+    left:4%;
+    top:27%;
+    width: 70%;
+    z-index: -1;   
+}
+
+.gameboy{
+  width: 40%;
+  max-width: 70vh;
+  margin-right: 10%;
+  right: 40%;
+  top: 10%;
+  transform: translateY(-30%);
+}
+.gameboy-gif{
+  position: absolute;
+    left:23%;
+    top:32%;
+    width: 50%;
+    z-index: -1;   
+}
+
+@media screen and (orientation:portrait){
+ .tv{
+  width: 60%;
+  max-width: 70vh;
+  margin-right: 10%;
+  right: 20%;
+  top: 75%;
+  transform: translateY(-30%);
+}   
+  .pc {
+  width: 60%;
+  max-width: 100vh;
+  margin-right: 10%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}  
+    
+    
+    
+    
+}

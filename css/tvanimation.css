@@ -1,0 +1,100 @@
+#lefthand {
+     animation-name: left ;
+    -webkit-animation-name: left ;
+ animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+#kino img {
+  -webkit-animation: kino infinite linear;
+  animation: kino infinite linear;
+   -webkit-animation-iteration-count: infinite;
+   animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes left {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes left {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+#righthand{
+     animation-name: right ;
+    -webkit-animation-name: right ;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes right {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes right {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes kino {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translatX(10px);
+    transform: translate3d(10px, 0, 0);
+        }
+}
